@@ -155,10 +155,12 @@ header {
 
 .hero_left, .hero_right {
   flex: 1;
-  padding: 0 129px;
   margin-top: 82px;
-
 }
+.hero_left{
+  padding: 0 129px;
+}
+
 /* .hero_left{
   text-align: left !important;
   margin-top: 82px;
@@ -167,6 +169,7 @@ header {
   background-color: rgba(128, 128, 128, 0.36);
       padding: 5px 20px;
     border-radius: 22px;
+        font-size: 10px;
 }
 .start_investing{
       padding: 10px 31px;
