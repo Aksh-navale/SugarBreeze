@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sugar Breeze</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <section class="hero">
+      <div class="hero_left">
+        <span>Trusted by 2M+ investors worldwide</span>
+          <h1>Empowering smarter Financial moves.</h1>
+          <p>Take control of your financial future with our powerful investment tools and real-time market insights.</p>
+           <button class="start_investing">Start Investing Today</button>
+           <button class="watch_demo">Watch Demo</button>
+      </div>
+      <div class="hero_right">
+          <h3> Subscribe to Market Updates</h3>
+         <div class="subcribe_inputs">
+              <input type="text" placeholder="xavier@example.com"/>
+              <input type="password" placeholder="password"/>
+              <button>Subcribe Now</button>
+              <span>Join 50,000+ subscribers receiving market updates</span>
+         </div>
+      </div>
+    </section>
+
+    <header>
+      <div class="navbar">
+        <div class="logo">SUGAR <span>BREEZE</span></div>
+        <nav class="nav-links nav" id="navMenu">
+          <a href="#">Dashboard</a>
+          <a href="#">Watchlist</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Pricing</a>
+          <a href="#">News</a>
+           <div class="subscribe">
+            <button class="subscribe-btn">Subscribe Now</button>
+           </div>
+        </nav>
+         
+        <button class="hamburger" id="hamburgerBtn">
+              <span id="hamburgerIcon">&#9776;</span>
+          </button>
+      </div>
+    </header>
+
+    <section class="search-section">
+      <input
+        type="text"
+        class="search-box"
+        placeholder="search floor stocks, crypto, and people"
+      />
+      <button class="search-button">Search</button>
+    </section>
+
+    <section>
+      <h2 class="section_title">Financial Highlights</h2>
+      <div class="card_grid">
+        <div class="card">
+          <div class="card_title">S&P 500</div>
+          <div class="card_value">$ 34,567</div>
+          <div class="card_change up">+1.2%</div>
+        </div>
+        <div class="card">
+          <div class="card_title">Dow Jones</div>
+          <div class="card_value">$ 24,567.08</div>
+          <div class="card_change up">+0.8%</div>
+        </div>
+        <div class="card">
+          <div class="card_title">Revenue</div>
+          <div class="card_value">7,098.566</div>
+        </div>
+        <div class="card">
+          <div class="card_title">Profit</div>
+          <div class="card_value">$ 24,567.08</div>
+        </div>
+        <div class="card">
+          <div class="card_title">Revenue</div>
+          <div class="card_value">7,098.566</div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+        <div class="sec_title">
+            <h2 class="section_title">Powerful features for smarter Investing</h2>
+            <span>Our platform provides you with the tools and insights you need to make informed investment decisions.</span>
+        </div>
+        <div class="features_section">
+          <div class="features_grid">
+            <div class="feature_card">
+              <div class="icon">🗞️</div>
+              <h3>Top Stories and Earnings</h3>
+              <p>Stay informed with curated news and earnings reports from companies that matter to your portfolio.</p>
+              <a href="#">Learn More →</a>
+            </div>
+
+            <div class="feature_card">
+              <div class="icon">📝</div>
+              <h3>Create your Watchlist</h3>
+              <p>Save your favorite items and get instant updates</p>
+              <input type="text" placeholder="Enter Watchlist Name" />
+              <button class="primary_btn">Create Watchlist</button>
+            </div>
+
+            <div class="feature_card">
+              <div class="icon">👥</div>
+              <h3>Our Team’s Watchlist</h3>
+              <p>You get free access to last week’s newsletter, offering insights into selected stocks from our team.</p>
+              <button class="primary_btn">Get Free Insights</button>
+              <button class="secondary_btn">Maybe later</button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="watchlist_section">
+      <div class="watchlist_info">
+        <h2>WATCHLIST</h2>
+        <p>Track your favorite stocks, cryptocurrencies, and other assets in one place. Get real-time updates and personalized alerts.</p>
+
+        <div class="feature">
+          <i class="fas fa-bell"></i>
+          <div>
+            <h4>Real-time Price Alerts</h4>
+            <p>Set custom price alerts for your watchlist assets</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <i class="fas fa-chart-line"></i>
+          <div>
+            <h4>Performance Tracking</h4>
+            <p>Monitor daily, weekly, and monthly performance</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <i class="fas fa-network-wired"></i>
+          <div>
+            <h4>Portfolio Integration</h4>
+            <p>Sync with your portfolio for comprehensive tracking</p>
+          </div>
+        </div>
+
+        <button class="track-btn">Start Tracking</button>
+      </div>
+
+      <div class="stock_cards">
+        <div class="stock_card">
+          <div class="symbol">AAPL</div>
+          <div class="progress green"><div></div></div>
+            <p class="progress_content">Steady growth amid strong iPhone sales</p>
+        </div>
+        <div class="stock_card">
+          <div class="symbol">MSFT <span class="loss">-1.23%</span></div>
+          <div class="progress red"><div></div></div>
+            <p class="progress_content">Dip follows recent earnings miss</p>
+        </div>
+        <div class="stock_card">
+          <div class="symbol">AMZN <span class="gain">2.23%</span></div>
+          <div class="progress green"><div></div></div>
+          <p class="progress_content">Climbing after record-breaking Prime sales.</p>
+        </div>
+        <div class="stock_card">
+          <div class="symbol">GOOGL <span class="gain">+3.78%</span></div>
+          <div class="progress green"><div></div></div>
+          <p class="progress_content">Boosted by strong ad revenue performance</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec_title ">
+      <h2 class="section_title">Upcoming Market Events</h2>
+      <span>
+        Stay ahead of the market with our curated calendar of important financial events
+      </span>
+
+  <div class="events-grid events-section  ">
+    <!-- Card 1 -->
+    <div class="event-card">
+      <div class="event-date-tag">
+        <div>
+         12th April<br />
+          <span>Friday</span>
+        </div>
+        <span class="tag blue">Earnings</span>
+      </div>
+      <div class="event-info">
+        <h4>US Retail Sales Data Release</h4>
+        <p>Forecast: +0.4% | Previous: +0.6%</p>
+        <p>8:30 PM EST</p>
+        <button class="calendar-btn">Add to Calendar</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="event-card">
+      <div class="event-date-tag">
+        <div>
+          12th April<br />
+          <span>Friday</span>
+        </div>
+        <span class="tag yellow">Earnings</span>
+      </div>
+      <div class="event-info">
+        <h4>US Retail Sales Data Release</h4>
+        <p>Forecast: +0.4% | Previous: +0.6%</p>
+        <p>8:30 PM EST</p>
+        <button class="calendar-btn">Add to Calendar</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="event-card">
+      <div class="event-date-tag">
+        <div>
+          12th April<br />
+          <span>Friday</span>
+        </div>
+        <span class="tag green"></span>
+      </div>
+      <div class="event-info">
+        <h4>US Retail Sales Data Release</h4>
+        <p>Forecast: +0.4% | Previous: +0.6%</p>
+        <p>8:30 PM EST</p>
+        <button class="calendar-btn">Add to Calendar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="view-calendar">
+    <a href="#">View Full Calendar →</a>
+  </div>
+    </section>
+
+
+    <section class="sec_title ">
+          <h2 class="section_title">Stay ahead of the market with our Newsletters</h2>
+          <span>
+            Get top stories, earnings updates, and watchlist alerts — tailored just for you.
+          </span>
+        <div class="subscribe-box">
+        <label for="email">EMAIL ADDRESS</label>
+        <input type="email" id="email" placeholder="youremailaddress@example.com" />
+
+        <div class="interests-title">I’m Interested in :</div>
+        <div class="checkbox-group">
+          <label><input type="checkbox" /> Market Updates</label>
+          <label><input type="checkbox" /> Earning Reports</label>
+          <label><input type="checkbox" /> Analyst Recommendations</label>
+          <label><input type="checkbox" /> Insider Trading Activity</label>
+        </div>
+
+        <button class="subscribe-btn">SUBSCRIBE NOW</button>
+
+        <div class="terms">
+          By subscribing, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </section>
+
+
+     <section class="sec_title">
+          <h2 class="section_title">What Our Users Say</h2>
+          <span class="sub_section_title">Join thousands of investors who trust our platform for their financial insights.</span>
+          <div class="testimonial_container">
+            <div class="testimonial_card">
+                <div class="testimonial_info">
+                  <div>
+                      <img src="./Images/pp2.avif" alt="Sarah Johnson" class="avatar" />
+                  </div>
+                  <div class="testimonial_details">
+                    <p>Sarah Johnson</p>
+                    <div class="sub">Retail Investor</div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                  </div>
+                </div>
+                <div class="testimonial_comments">
+                  <p><i>The personalized alerts have completely transformed how I monitor my investments. I'm able to react quickly to market changes and have seen significant improvements in my returns.</i></p>
+                </div>
+            </div>
+              <div class="testimonial_card">
+                <div class="testimonial_info">
+                  <div>
+                      <img src="./Images/pp2.avif" alt="Sarah Johnson" class="avatar" />
+                  </div>
+                  <div class="testimonial_details">
+                    <p>Sarah Johnson</p>
+                    <div class="sub">Retail Investor</div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                  </div>
+                </div>
+                <div class="testimonial_comments">
+                  <p><i>The personalized alerts have completely transformed how I monitor my investments. I'm able to react quickly to market changes and have seen significant improvements in my returns.</i></p>
+                </div>
+            </div>
+            <div class="testimonial_card">
+                <div class="testimonial_info">
+                  <div>
+                      <img src="./Images/pp2.avif" alt="Sarah Johnson" class="avatar" />
+                  </div>
+                  <div class="testimonial_details">
+                    <p>Sarah Johnson</p>
+                    <div class="sub">Retail Investor</div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                  </div>
+                </div>
+                <div class="testimonial_comments">
+                  <p><i>The personalized alerts have completely transformed how I monitor my investments. I'm able to react quickly to market changes and have seen significant improvements in my returns.</i></p>
+                </div>
+            </div>
+            <div class="testimonial_card">
+                <div class="testimonial_info">
+                  <div>
+                      <img src="./Images/pp2.avif" alt="Sarah Johnson" class="avatar" />
+                  </div>
+                  <div class="testimonial_details">
+                    <p>Sarah Johnson</p>
+                    <div class="sub">Retail Investor</div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                  </div>
+                </div>
+                <div class="testimonial_comments">
+                  <p><i>The personalized alerts have completely transformed how I monitor my investments. I'm able to react quickly to market changes and have seen significant improvements in my returns.</i></p>
+                </div>
+            </div>
+          </div>   
+    </section>
+
+
+
+      <section class="sec_title faq_section">
+            <h2 class="section_title">Frequently Asked Questions</h2>
+              <div class="faq_card">
+                <h3>Is there a free trial available?</h3>
+                <p>Yes, we offer a 14-day free trial for all our plans. No credit card is required to start your trial. You'll get full access to all features included in your selected plan during the trial period.</p>
+              </div>
+
+              <div class="faq_card">
+                <h3>Do you offer discounts for annual billing?</h3>
+                <p>Yes, we offer a 14-day free trial for all our plans. No credit card is required to start your trial. You'll get full access to all features included in your selected plan during the trial period.</p>
+              </div>
+
+              <div class="faq_card">
+                <h3>How often is the data updated?</h3>
+                <p>Yes, we offer a 14-day free trial for all our plans. No credit card is required to start your trial. You'll get full access to all features included in your selected plan during the trial period.</p>
+              </div>
+
+              <div class="faq_card">
+                <h3>Do you offer discounts for annual billing?</h3>
+                <p>Yes, we offer a 14-day free trial for all our plans. No credit card is required to start your trial. You'll get full access to all features included in your selected plan during the trial period.</p>
+              </div>
+              <span> More Questions -></span>
+      </section>
+
+       <section class="cta_section">
+          <div class="cta_container">
+            <h2>Is it time to level up your investment game?</h2>
+            <p>Join thousands of investors who trust our platform for making better investment decisions.</p>
+            <div class="cta_buttons">
+              <button class="btn_primary">Start Free Trial</button>
+              <button class="btn_secondary">Learn More</button>
+            </div>
+          </div>
+      </section>
+
+
+      <footer class="footer">
+    <div class="footer-container">
+      
+      <div class="footer-column logo-column">
+        <h2><span class="logo-purple">SUGAR</span><span class="logo-white">BREEZE</span></h2>
+        <p>Your trusted source for personalized financial insights and market intelligence.</p>
+        <div class="social-icons">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li>Home</li>
+          <li>Markets</li>
+          <li>Insights</li>
+          <li>Watchlist</li>
+          <li>Events</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li>Help Center</li>
+          <li>Blog</li>
+          <li>API Documentation</li>
+          <li>Market Glossary</li>
+          <li>Investment Guides</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> 1234 Financial District, xyz street, Colony Name</li>
+          <li><i class="fas fa-envelope"></i> test@gmail.com</li>
+          <li><i class="fas fa-phone"></i> +91 987654321</li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<script>
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const navMenu = document.getElementById('navMenu');
+  const hamburgerIcon = document.getElementById('hamburgerIcon');
+
+  hamburgerBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+
+    // Toggle icon between hamburger and 'X'
+    if (navMenu.classList.contains('show')) {
+      hamburgerIcon.innerHTML = '&times;'; // X icon
+    } else {
+      hamburgerIcon.innerHTML = '&#9776;'; // Hamburger icon
+    }
+  });
+
+  function closeMenu() {
+    navMenu.classList.remove('show');
+    hamburgerIcon.innerHTML = '&#9776;';
+  }
+
+
+
+// HERO SECTION===============================================
+  $(document).ready(function() {
+    $('.hero h1')
+      .css({ opacity: 0, position: 'relative', left: '500px' }) // start from right
+      .animate({ opacity: 1, left: '0px' }, 1000); // move to original position
+  });
+  
+// END HERO SECTION===============================================
+
+</script>
+
+
+</body>
+</html>
