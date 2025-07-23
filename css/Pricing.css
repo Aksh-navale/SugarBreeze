@@ -1,0 +1,146 @@
+.invest-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  gap: 60px;
+  background-color: #fff;
+  margin: 77px 10px 10px;
+}
+
+.invest-image img {
+  max-width: 400px;
+  border-radius: 50%;
+}
+.invest-content{
+  width: 50%;
+}
+.invest-content h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.features-list li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #444;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: gold;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.customize-btn {
+  background-color: #56008b;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.feature-comparison {
+  max-width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.feature-comparison h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.feature-comparison table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  background-color: #fff;
+  border: 1px solid #f7f7f7;
+}
+
+.feature-comparison th,
+.feature-comparison td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.feature-comparison thead th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.feature-comparison .section td {
+  background-color: #fafafa;
+  font-weight: bold;
+  text-align: left;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.feature-comparison td {
+  text-align: center;
+}
+
+.feature-comparison td:first-child {
+  text-align: left;
+}
+
+.feature-comparison td:contains('✔️') {
+  color: green;
+}
+
+.feature-comparison td:contains('❌') {
+  color: red;
+}
+
+
+.success-icon {
+  color: #00b300;
+  font-size: 18px;
+}
+
+.error-icon {
+  color: #e60000;
+  font-size: 18px;
+}
+
+  .success-icon:hover,
+.error-icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+  

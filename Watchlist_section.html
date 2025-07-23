@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Watchlist</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/Watchlist_section.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+
+    <header>
+      <div class="navbar">
+        <div class="logo">SUGAR <span>BREEZE</span></div>
+        <nav class="nav-links nav" id="navMenu">
+          <a href="./index.html">Home</a>
+          <a href="./Watchlist_section.html " class="current_page">Watchlist</a>
+          <a href="./News.html">Market News</a>
+          <a href="./MarketEvents.html">Market Events</a>
+          <a href="./FAQ.html">FAQ</a>
+          <a href="./AboutUs.html">About Us</a>
+          <a href="./Pricing.html">Pricing</a>
+          <a href="./loginPage.html">Login</a>
+           <div class="subscribe">
+            <button class="subscribe-btn">Subscribe Now</button>
+           </div>
+        </nav>
+        <button class="hamburger" id="hamburgerBtn">
+              <span id="hamburgerIcon">&#9776;</span>
+          </button>
+      </div>
+    </header>
+
+
+    <section class="watchlist_view">
+        <h1>My Watchlist</h1>
+        <div class="updated">Last Updated : May 5, 2025 at 11:00am</div>
+
+        <div class="filter_bar">
+            <select>
+            <option>My Watchlist</option>
+            </select>
+            <button>All</button>
+            <button>Stocks</button>
+            <button>ETF's</button>
+            <button>Crypto</button>
+        </div>
+
+        <table>
+            <thead>
+            <tr>
+                <th><input type="checkbox"></th>
+                <th>Symbol</th>
+                <th>Company</th>
+                <th>Price</th>
+                <th>Change</th>
+                <th>% Change</th>
+                <th>Market Cap</th>
+                <th>Volume</th>
+                <th>Chart</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Repeating row -->
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>AAPL</td>
+                <td>
+                Apple Inc.<br>
+                <span class="category_note">NASDAQ</span>
+                </td>
+                <td>$189.42</td>
+                <td>+$2.18</td>
+                <td>+1.16%</td>
+                <td>$2.94T</td>
+                <td>12.8M</td>
+                <td><i class="material-icons">bar_chart</i></td>
+                <td class="actions">
+                <i class="material-icons">shopping_cart</i>
+                <i class="material-icons">access_time</i>
+                <i class="material-icons">delete</i>
+                </td>
+            </tr>
+             <tr>
+                <td><input type="checkbox"></td>
+                <td>AAPL</td>
+                <td>
+                Apple Inc.<br>
+                <span class="category_note">NASDAQ</span>
+                </td>
+                <td>$189.42</td>
+                <td>+$2.18</td>
+                <td>+1.16%</td>
+                <td>$2.94T</td>
+                <td>12.8M</td>
+                <td><i class="material-icons">bar_chart</i></td>
+                <td class="actions">
+                <i class="material-icons">shopping_cart</i>
+                <i class="material-icons">access_time</i>
+                <i class="material-icons">delete</i>
+                </td>
+            </tr>
+             <tr>
+                <td><input type="checkbox"></td>
+                <td>AAPL</td>
+                <td>
+                Apple Inc.<br>
+                <span class="category_note">NASDAQ</span>
+                </td>
+                <td>$189.42</td>
+                <td>+$2.18</td>
+                <td>+1.16%</td>
+                <td>$2.94T</td>
+                <td>12.8M</td>
+                <td><i class="material-icons">bar_chart</i></td>
+                <td class="actions">
+                <i class="material-icons">shopping_cart</i>
+                <i class="material-icons">access_time</i>
+                <i class="material-icons">delete</i>
+                </td>
+            </tr>
+             <tr>
+                <td><input type="checkbox"></td>
+                <td>AAPL</td>
+                <td>
+                Apple Inc.<br>
+                <span class="category_note">NASDAQ</span>
+                </td>
+                <td>$189.42</td>
+                <td>+$2.18</td>
+                <td>+1.16%</td>
+                <td>$2.94T</td>
+                <td>12.8M</td>
+                <td><i class="material-icons">bar_chart</i></td>
+                <td class="actions">
+                <i class="material-icons">shopping_cart</i>
+                <i class="material-icons">access_time</i>
+                <i class="material-icons">delete</i>
+                </td>
+            </tr>
+             <tr>
+                <td><input type="checkbox"></td>
+                <td>AAPL</td>
+                <td>
+                Apple Inc.<br>
+                <span class="category_note">NASDAQ</span>
+                </td>
+                <td>$189.42</td>
+                <td>+$2.18</td>
+                <td>+1.16%</td>
+                <td>$2.94T</td>
+                <td>12.8M</td>
+                <td><i class="material-icons">bar_chart</i></td>
+                <td class="actions">
+                <i class="material-icons">shopping_cart</i>
+                <i class="material-icons">access_time</i>
+                <i class="material-icons">delete</i>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <div>Showing 1-8 of 24 items</div>
+            <div class="pages">
+            <i class="material-icons">chevron_left</i>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <i class="material-icons">chevron_right</i>
+            </div>
+        </div>
+    </section>
+
+
+
+   
+    <section class="watchlist_news">
+        <h2>News Tailored to Your Watchlist</h2>
+            <div class="news_container">
+                <div class="news_image">
+                    <img src="./Images/news_img3.avif" alt="Map and tablet analysis" />
+                </div>
+                <div class="news_list">
+                    <a href="./NewsDetail.html"><div class="news_item">
+                        <p class="tag">FINANCE</p>
+                        <h3>StanChart says its trade business resilient to Trump tariff disruption</h3>
+                        <p class="desc">Citigroup must face a revived lawsuit claiming it caused more than $1 billion of losses by orchestrating and concealing a vast fraud at the now-bankrupt Mexican oil and gas services company Oceanografia, a U.S. appeals court ruled on Thursday</p>
+                        <div class="time_info">
+                        <span>12:43 PM</span>
+                        <span>GMT+5:30</span>
+                        </div>
+                    </div> </a>
+
+                     <a href="./NewsDetail.html"><div class="news_item">
+                        <p class="tag economy">ECONOMY</p>
+                        <h3>StanChart says its trade business resilient to Trump tariff disruption</h3>
+                        <p class="desc">Citigroup must face a revived lawsuit claiming it caused more than $1 billion of losses by orchestrating and concealing a vast fraud at the now-bankrupt Mexican oil and gas services company Oceanografia, a U.S. appeals court ruled on Thursday</p>
+                        <div class="time_info">
+                        <span>12:43 PM</span>
+                        <span>GMT+5:30</span>
+                        </div>
+                    </div></a>
+
+                     <a href="./NewsDetail.html"><div class="news_item">
+                        <p class="tag">FINANCE</p>
+                        <h3>StanChart says its trade business resilient to Trump tariff disruption</h3>
+                        <p class="desc">Citigroup must face a revived lawsuit claiming it caused more than $1 billion of losses by orchestrating and concealing a vast fraud at the now-bankrupt Mexican oil and gas services company Oceanografia, a U.S. appeals court ruled on Thursday</p>
+                        <div class="time_info">
+                        <span>12:43 PM</span>
+                        <span>GMT+5:30</span>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+    </section>
+     
+    
+
+
+
+
+   <footer class="footer">
+        <div class="footer-container">
+      
+        <div class="footer-column logo-column">
+          <h2><span class="logo-purple">SUGAR</span><span class="logo-white">BREEZE</span></h2>
+          <p>Your trusted source for personalized financial insights and market intelligence.</p>
+          <div class="social-icons">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>Home</li>
+            <li>Watchlist</li>
+            <li>Market Insights</li>
+            <li>Market Events</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li>Help Center</li>
+            <li>Blog</li>
+            <li>FAQ</li>
+            <li>Pricing</li>
+            <li>Login</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 1234 Financial District, xyz street, Colony Name</li>
+            <li><i class="fas fa-envelope"></i> test@gmail.com</li>
+            <li><i class="fas fa-phone"></i> +91 987654321</li>
+          </ul>
+        </div>
+
+      </div>
+      </footer>
+
+</body>
+</html>

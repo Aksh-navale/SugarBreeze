@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market Overview</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .chart-container {
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+    }
+    h3 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    canvas {
+      /* background: linear-gradient(to bottom, rgba(33, 150, 243, 0.1), rgba(33, 150, 243, 0)); */
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chart-container">
+    <canvas id="marketChart" height="336px" width="874px"></canvas>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('marketChart').getContext('2d');
+    // Create gradient for the fill
+        const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+        gradient.addColorStop(0, 'rgba(255, 255, 255, 1)');
+        gradient.addColorStop(1, 'rgba(245, 224, 255, 1)');
+
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        datasets: [
+          {
+            label: 'Line 1',
+            data: [31000, 31500, 32500, 33000, 32700, 32800, 33200, 33400, 33000, 33300, 33500, 33600],
+            borderColor: '#2196f3',
+            fill: true,
+            // background: '#FFFFFF',
+            background: 'linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(245, 224, 255, 1) 100%)',
+            tension: 0.3,
+          },
+          {
+            label: 'Line 2',
+            data: [7000, 7100, 7200, 7300, 7200, 7150, 7180, 7200, 7150, 7200, 7250, 7280],
+            borderColor: '#4caf50',
+            fill: false,
+            tension: 0.3,
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              callback: function(value) {
+                return '$' + value.toLocaleString();
+              }
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

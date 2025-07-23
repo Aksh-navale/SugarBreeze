@@ -1,0 +1,542 @@
+/* =========================================================LOGGEDIN PAGE========================================== */
+
+
+.loggedIn_hero {
+  background-color: #2d014b;
+  color: var(--text-light);
+
+  /* padding: 60px 20px; */
+  height: 37vh;
+  position: relative;
+  background-image: url(./Images/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment:revert;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+.loggedIn_hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(44 20 44 / 45%);
+  z-index: 0;
+}
+
+.loggedIn_hero > * {
+  position: relative;
+  z-index: 1;
+  /* padding: 0 20px; */
+  flex: 1;
+}
+
+
+/* ======================================market check=========================================== */
+.market_widget {
+ background: #FFFFFF;
+background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(245, 224, 255, 1) 100%);
+  border-radius: 12px;
+  padding: 20px;
+  font-family: sans-serif;
+  color: #5c2d91;
+  width: 80%;
+  margin: 0 auto;    
+  border: 1px solid #E0E0E0;
+}
+
+.market_header {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.status_dot {
+  height: 10px;
+  width: 10px;
+  background-color: #43d854;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.market_tabs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  flex-wrap: wrap;
+  justify-content: end;
+      margin-top: -24px;
+}
+
+.market_tabs button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #7a3eb1;
+  font-size: 14px;
+}
+
+.market_tabs .active {
+  color: #4b0082;
+  text-decoration: underline;
+}
+
+.market_cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.market_card {
+  background: transparent;
+  padding: 10px;
+  flex: 1;
+  min-width: 220px;
+  max-width: 300px;
+}
+
+.label {
+  font-size: 12px;
+  color: #8033b7;
+  margin: 6px 0 0;
+}
+
+.value {
+  font-weight: bold;
+  font-size: 17px;
+  color: #3c0074;
+}
+
+.change {
+  display: inline-block;
+  margin: 4px 0 12px;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.change.up {
+  background-color: #c5f1cd;
+  color: #146c2d;
+}
+
+.change.down {
+  background-color: #f6d6c7;
+  color: #7d3e00;
+}
+
+/* ==========================================MARKET GRAPH VIEW================================ */
+.marketers_view {
+  display: flex;
+  gap: 1rem; /* optional spacing between divs */
+  margin: 33px 87px;
+}
+
+.marketers_view > div {
+  /* flex: 1;  */
+  /* border:1px solid salmon */
+}
+
+/* Optional: different widths */
+.marketers_view > div:first-child {
+  width: 70%;
+  
+}
+
+.marketers_view > div:last-child {
+  width: 30%;
+}
+.perfomer_info{
+    display: flex;
+    justify-content: flex-start;
+    gap: 106px;
+    margin-bottom: 20px;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+.perfomer_info div{
+      width: 77%;
+}
+.perfomer_info div p{
+  font-weight: 600;
+  font-size: 17px;
+}
+.perfomer_info div span{
+      font-size: 13px;
+}
+.s_rate{
+  color: green;
+}
+.l_rate{
+  color: red;
+}
+
+/* ===============================WATCHLIST VIEW========================= */
+  .watchlist_container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .watchlist {
+      background: white;
+      /* border: 2px solid #0078d4; */
+      padding: 1rem;
+      flex: 1 1 600px;
+      max-width: 1006px;
+    }
+
+    .watchlist h2 {
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      /* border-collapse: collapse; */
+      text-align: left;
+      border: 1px solid #f0eafc;
+          border-radius: 5px;
+    }
+
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid #ccc;
+      font-size: 13px;
+    }
+
+    th {
+      background: #f0eafc;
+      font-weight: bold;
+      font-size: 12px;
+    }
+
+    .positive {
+      color: green;
+    }
+
+    .negative {
+      color: red;
+    }
+
+    .settings {
+      background: white;
+      padding: 1rem;
+      flex: 1 1 300px;
+      max-width: 350px;
+    }
+
+    .settings h3 {
+      margin-top: 0;
+    }
+
+    .section {
+      background: #f0eafc;
+      margin-bottom: 1rem;
+      padding: 10px 5px 3px 5px;
+    border-radius: 5px;
+    }
+
+    .watchlist_title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      font-size: 12px;
+    margin-left: 10px;
+    }
+    
+
+    .watchlist_checkbox_group {
+      background: white;
+        border-radius: 5px;
+      padding: 2px 17px;
+    }
+
+    .watchlist_checkbox_group label {
+      display: block;
+        margin: 6px 0;
+      font-size: 13px;
+    }
+
+    .divider {
+      height: 12px;
+    }
+
+  /* ======================================news section================================== */
+  .news_sec{
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    background: #faf0ff;
+  }
+ .news_image {
+  width: 40%;
+  background-color: #f0f0f0;
+  /* padding: 16px; */
+  box-sizing: border-box;
+}
+
+.news_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or 'contain' if you prefer */
+  display: block;
+  box-shadow: 2px 2px 23px 1px #a6a4a7;
+  border-radius: 3px;
+}
+
+ .news_section {
+       width: 60%;
+     margin: 10px 47px;
+    }
+
+    .news_header {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .news_date {
+      color: gray;
+      margin-bottom: 20px;
+    }
+
+    .weekly_report {
+      margin-bottom: 30px;
+    }
+
+    .weekly_report h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .tag_latest {
+      font-size: 14px;
+      color: #888;
+      margin-left: 10px;
+    }
+
+    .weekly_report .desc {
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+
+    .weekly_report a {
+      color: #7c3aed;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .views {
+      color: #999;
+      font-size: 13px;
+      margin-left: 10px;
+    }
+
+    .previous_reports {
+      margin-top: 30px;
+    }
+
+    .previous_reports h4 {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .report_item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #eee;
+      margin-bottom: 10px;
+      transition: background 0.3s;
+    }
+
+    .report_item:hover {
+      background: #eddaf6;
+    }
+
+    .report_info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .report_icon {
+      background: #e2d9f3;
+      color: #7c3aed;
+      padding: 10px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .report_text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .report_text .date {
+      font-weight: 600;
+    }
+
+    .report_text .subtitle {
+      font-size: 14px;
+      color: gray;
+    }
+
+    .arrow {
+      font-size: 18px;
+      color: gray;
+    }
+
+   /* ---------------------------------latest updates========================================== */
+
+.latest_updates {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.latest_updates h3 {
+  margin-bottom: 20px;
+}
+
+.update_card {
+  background-color: #f2f2f2;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+}
+
+.update_card h4 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.meta {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.meta .news_tag {
+  color: #9c27b0;
+  font-weight: 500;
+}
+
+.update_card p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================REPSONSIVE-============================ */
+@media (max-width: 768px) {
+  .market_cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .market_widget{
+        width: 95%;
+  }
+  .market_tabs{
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-top: auto;
+  }
+  .market_card{
+    display: flex;
+    gap: 30px;
+  }
+  .marketers_view{
+    margin: 28px 13px;
+    display: grid;
+  }
+  .marketers_view > div:last-child {
+    width: 110%;
+  } 
+  .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .report_item {
+      /* flex-direction: column; */
+      align-items: flex-start;
+    }
+
+    .arrow {
+      margin-top: 8px;
+      align-self: flex-end;
+    }
+    .news_sec{
+      display: grid;
+    }
+    .news_image{
+      width: 100%;
+    }
+    .news_section{
+      margin: 0;
+      width: 100%;
+    }
+
+    .update_card {
+      padding: 12px;
+    }
+
+    .update_card h4 {
+      font-size: 15px;
+    }
+
+    .meta {
+      flex-direction: column;
+      gap: 4px;
+    }
+
+}
